@@ -1,0 +1,73 @@
+.suscribeWrapper{
+/* border: rgb(250, 62, 5) 2px solid;  */
+}
+.headerH1{
+    text-align: center;
+    padding: 15px;
+    margin-top: 15px;
+}
+h5{
+    padding: 10px;
+    text-decoration: underline solid;
+}
+
+.formaRegistro{
+    background: rgb(60, 180, 56);
+    border: 2px solid black;
+}
+
+
+.col-xl-6{
+    border: 3px solid black;
+    border-radius: 5px;
+    display: block;
+}
+.inputDetails{
+    background: rgb(200, 243, 10);
+}
+
+.personalDetails{
+    background: rgb(167, 209, 248);
+    padding: 10px;
+}
+
+.houseDetails{
+    background: rgb(248, 198, 241);
+    padding: 10px;
+}
+
+input{
+    display: block;
+    margin: 12px;
+    padding: 5px;
+    border-style: none;
+    background: transparent;
+    border-bottom: black 2px solid;
+}
+.picsTable .col-md-4{
+    border: 2px solid red;
+}
+.card{
+    height: 200px;
+}
+.entraFotos{
+    border: initial;
+}
+
+select{
+    display: line;
+    margin: 8px;
+    padding: 5px;
+}
+.buttonsClass{
+    text-align: center;
+}
+
+
+
+@media (min-width:768px){
+    .suscribeWrapper{
+      margin-top: 10px;
+        }
+        
+}

@@ -1,0 +1,20 @@
+
+.body{
+    align-items: center;  
+    background-color: transparent;
+    height: 100%;
+}
+
+#logo{
+    display: block;
+    padding: 20px;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    margin-top: 5px;
+}
+
+#logo img{
+    width: 35vh;
+    
+}

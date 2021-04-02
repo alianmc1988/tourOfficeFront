@@ -1,0 +1,76 @@
+header{
+    position: relative;
+    background-color: rgb(250, 199, 123);
+    padding: 10px;
+    box-shadow: grey 0 10px 20px 0;
+    border-bottom-right-radius: 15px;
+}
+.notifications{
+    text-align: right;
+}
+
+
+.seeNotificationBtn{
+    display: inline-block;
+    width: 40px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: rgb(245, 0, 0);
+    margin: 0 15px 0 15px;
+}
+
+header h5{
+    display: inline-block;
+}
+.btn-hamburguer{
+    position: fixed;
+    left: 20px;
+    width: 40px;
+    height: 40px;
+}
+.btn-hamburguer:after{
+    border: none;
+}
+.menu_responsive{
+    display: block;
+    position: absolute;
+    background-color: rgb(250, 199, 123);
+    height: 50vh;
+    width: 250px;
+    transition: 1.2s;
+    border-bottom-right-radius: 15px;
+    border-right: grey 2px solid;
+    box-shadow: grey 10px 5px 20px 0;
+    margin-top: 1px;
+}
+ul{
+    display: block;
+    list-style: none;
+    padding: 15px;
+    margin-top: 25px;
+    
+}
+li{
+    margin: 20px;
+    text-decoration: none;
+}
+li a{
+    color: black;
+}
+li a:hover{
+color: white;
+}
+@media(min-width:1024px){
+    .menu_responsive{
+        display: block;
+        box-sizing: content-box;
+        background-color: rgb(250, 199, 123);
+        height: 95%;
+        width: 18%;
+        transition: 1.2s;
+    }
+    .menu_responsive a{
+        color: rgb(0, 0, 0);
+        font-size: 1.5rem;
+    }
+}

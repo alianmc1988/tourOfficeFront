@@ -1,0 +1,21 @@
+<!-- Container de Terminos y Condiciones -->
+<div class="container terminosUsos">
+    <section>
+        <h3>Terminos y Condiciones para el uso del Servicio</h3>
+        <span>{{terminos}}</span>
+    </section>
+    <div class="aceptaCondiciones">
+        <input class="terminosUsosCheckBox" type="checkbox" (click)="suscribe()" name="terminosYUsos" id="terminosUsosCheckBox">
+        <label for="terminosYUsos">Acepta los Terminos y condiciones?</label>
+    </div>
+    
+    <!--Fin Container de Terminos y Condiciones --> 
+<form [formGroup]="enviabtn" *ngIf="chekea == true" class="container formSuscribe">
+    <h4>Porfavor introduzca su <b>Email</b> para continuar la suscripcion</h4>
+    <div class="btnMail">    
+        <input formControlName ="inputmail"  type="email" name="mail" id="mailSuscribe" placeholder="Email">
+        <button class="btn btn-primary" id="suscription_mail_btn" (click)="enviaSuscription()" [disabled] = "enviabtn.invalid" routerLink = "/login">Enviar</button>
+    </div>
+</form>
+</div> 
+

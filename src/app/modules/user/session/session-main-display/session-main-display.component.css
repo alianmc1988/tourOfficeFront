@@ -1,0 +1,15 @@
+.hero{
+    display: block;
+    height: 750px;
+    border: darkgreen 2px solid;
+    margin-top: 20px;
+    padding: 20px ;
+}
+.calendar-container{
+    background: rgb(82, 211, 93);
+    padding: 10px
+}
+.calendar-month-detail{
+    background: rgb(169, 203, 231);
+    padding: 10px;
+}

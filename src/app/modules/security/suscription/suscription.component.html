@@ -1,0 +1,66 @@
+<div class="container suscribeWrapper">   
+<div class="headerH1">
+<h3>Por favor rellene el siguiente formulario</h3>
+</div>
+
+      <!-- Container y form de Registro de Usuarios & casa -->
+    <div class="container-fluid formaRegistro">
+        <form class="registrationForm">
+            <div class="row inputDetails">
+            <!-- INICIO div de datos personales de los clientes -->
+                <div class="col-xl-6 personalDetails">   
+                    <h5>Datos Personales</h5>
+                    <input type="text" placeholder="Nombre"  id="inputName">
+                    <input type="text" placeholder="Apellidos" id="inputLastName">
+                    <input type="email" name="inputmail" id="inputmail" placeholder="Email">
+                    <input type="number" name="inputphoneNumber" id="inputphoneNumber" placeholder="Telefono">
+                </div>
+                <!--FIN div de datos personales de los clientes -->
+                
+                <!--INICIO div Detalles de las casas -->
+                <div class="col-xl-6 houseDetails">
+                    <h5> Datos de su Hostal</h5>
+                    <input type="text" placeholder="Direccion" id="address">
+                    <input type="number" placeholder="Numero de Cuartos" id="inputcantRooms">
+                    <input type="number" placeholder="Precio por noche">
+                   <br>
+                    <label for="independiente">Es independiente?</label><select name="independiente" id="independiente" >
+                        <option value="yes">Si</option>
+                        <option value="no">No</option>
+                    </select>
+                    <br>                
+                    <span>{{description}}</span>
+                </div>
+                <!--FIN div Detalles de las casas -->
+            </div>
+            
+            <div class="fotos">
+                <h3>aqui dentro ira un carrousel con las fotos obtenidas </h3>
+                    <div class="row picsTable">
+                        <div class="col-md-4 picsTable-first"><h5>Primera Foto</h5>
+                            <div class="card"></div>
+                            <input class="entraFotos" type="file" name="fotos" id="firstPic" value="No_Pic">
+                        </div>
+                        <div class="col-md-4 picsTable-second"><h5>Segunda Foto</h5>
+                            <div class="card"></div>
+                            <input class="entraFotos " type="file" name="fotos" id="secondPic" value="No_Pic">
+                        </div>
+                        
+                        <div class="col-md-4 picsTable-third"><h5>Tercera Foto</h5>
+                            <div class="card"></div>
+                            <input class="entraFotos " type="file" name="fotos" id="thirdPic" value="No_Pic">
+                        </div>
+                    </div>
+                </div>
+            <!-- validar todos los campos, luego activar el boton para enviar -->
+            <div class="buttonsClass">
+                <button class="btn btn-primary" (click)="send()">Aceptar</button>
+            </div>
+            
+            <!-- enviar alert para verificar si realmente desea suscribirse -->
+        </form>
+    </div>
+     <!-- Container y forma de Registro de Usuarios -->
+     <!-- link a pagina principal home -->
+<a href="home">inicio</a>
+</div>

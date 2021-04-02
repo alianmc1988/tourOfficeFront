@@ -1,0 +1,91 @@
+.wrapper{
+	display: block;
+	position: relative;
+	box-sizing: content-box;
+	margin-top: 50px;
+	padding: 10px;
+}
+
+.form-login{
+	position: relative;
+	text-align: center;
+	align-items: center;
+	padding: 10px;
+	max-width: 350px;
+	margin: 0  auto;
+	margin-top: 100px;
+	border: grey 2px solid;
+	border-radius: 15px;
+	box-shadow: grey 0px 0px 10px 10px;
+	background: rgb(202, 250, 243);		
+	
+	transition: 1s;
+}
+
+input{
+	display: inline-block;
+	position: relative;
+	width: 100%;
+	max-width: 200px;
+	padding: 5px;
+	margin: 10px;
+	border: none;
+	border-bottom: rgb(34, 1, 87) 3px solid;
+	text-align: center;
+	background-color: transparent;
+	
+	
+}
+
+input:hover{
+	background-color: lightgray;
+	transition: 500ms;
+	max-width: 220px;
+	text-align: center;
+	padding-left: 10px;
+	background: transparent;
+	border: none;
+	border-bottom: rgb(34, 1, 87) 3px solid;
+}
+
+
+button{
+	margin-top: 20px;
+	width: 100%;
+	max-width: 205px;
+	margin-bottom: 10px;
+}
+.form-login-animation{
+	position: relative;
+	text-align: center;
+	align-items: center;
+	padding: 10px;
+	max-width: 350px;
+	margin: 0  auto;
+	margin-top: 20%;
+	border: grey 2px solid;
+	border-radius: 15px;
+	box-shadow: grey 0px 0px 10px 10px;
+	background: rgb(202, 250, 243);
+	transition: 2s;
+}
+
+h3{
+	text-shadow: rgb(112, 112, 112) 2px 1px 5px;
+}
+
+@media(min-width:1024px){
+	.form-login{
+		position: relative;
+		text-align: center;
+		align-items: center;
+		padding: 10px;
+		max-width: 350px;
+		margin: 0  auto;
+		margin-top: 10%;
+		border: grey 2px solid;
+		border-radius: 15px;
+		box-shadow: grey 0px 0px 10px 10px;
+		background: rgb(202, 250, 243);
+	}
+}

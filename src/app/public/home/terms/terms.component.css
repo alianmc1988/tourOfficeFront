@@ -1,0 +1,87 @@
+
+
+.terminosUsos{
+    padding: 20px;
+}
+
+h3{
+    margin-bottom: 30px;
+    font-weight: 800;
+}
+
+section{
+    font-size: 1.2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.aceptaCondiciones{
+    display: inline-block;
+    margin: 15px 0;
+    padding: 10px;
+    
+}
+
+.aceptaCondiciones input{
+    height: 25px;
+    width: 30px;
+    margin: 8px;
+    
+}
+ label {
+    font-size: .9rem;
+    font-weight: 800;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.formSuscribe{
+    position: relative;
+    padding: 20px;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    
+    border: 2px solid green;
+}
+
+
+.formSuscribe input{
+width: 240px;
+height: 45px;
+font: bold 1.5em sans-serif ;
+margin-right: 18px;
+}
+
+.formSuscribe button{
+    height: 45px;
+    margin-top: 3px;
+    
+    
+}
+
+
+
+/* Resolucion desde 1024 hasta FullHD */
+@media (min-width: 1024px){
+    .terminosUsos{
+        background: rgb(250, 224, 152);
+        margin-top: 50px;
+        border-radius: 6px;
+    }
+    
+    span{
+        font-size: 1.5rem;
+    }
+    label{
+        font-size: 1.3rem;
+    }
+    .formSuscribe input{
+        width: 300px;
+      
+        }
+    .formSuscribe button{
+        height: 45px;
+        margin-bottom: 8px;
+    }
+    
+}

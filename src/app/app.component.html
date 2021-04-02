@@ -1,0 +1,11 @@
+<div class="visible">
+    <app-navbar *ngIf="nav_visible == true"></app-navbar>
+    
+
+
+
+<router-outlet></router-outlet>
+<button (click)="cambia()" [routerLink] = "direccion">cambiar</button>
+</div>
+
+

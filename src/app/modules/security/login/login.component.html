@@ -1,0 +1,12 @@
+
+
+<form [formGroup]="loginForm" class="card form-login" (ngSubmit) = "send(loginForm.value)" id="form-login">
+    <div class="form-login-nameDisplay">
+        <h3>Inicie Sesion</h3>
+    </div> 
+    
+    <input formControlName="email" class="userinput" type="email" placeholder="email" id="user">
+    <input formControlName="password" class="passwordinput" type="password" placeholder="Contraseña" id= "password" > 
+    <button type="submit" class="btn btn-primary" [disabled] = 'loginForm.invalid'>Inicio</button>
+</form>
+<a href="home">inicio</a>
