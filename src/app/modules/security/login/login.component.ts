@@ -9,7 +9,7 @@ export class LoginComponent implements OnInit {
   email= "^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$";
   passvalid='^(?=.*[A-Z].*[A-Z])(?=.*[!@#$&*])(?=.*[0-9].*[0-9])(?=.*[a-z].*[a-z].*[a-z]).{8}$';
   loginForm:FormGroup;
-  
+  renderer:boolean = false;
   constructor(private _builder:FormBuilder) {
     this.loginForm = this._builder.group({
       email: ['',[Validators.email,Validators.required]],
@@ -27,7 +27,7 @@ export class LoginComponent implements OnInit {
     console.log('esto no es valido')
   }
   }
-  
+  //enviar request al servidor y esperar respuesta de validacion
   send(e:any){
     console.log(e)
   }

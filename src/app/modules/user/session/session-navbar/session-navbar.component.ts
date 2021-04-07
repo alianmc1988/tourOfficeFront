@@ -11,7 +11,7 @@ export class SessionNavbarComponent implements OnInit {
   name:string = "Default";
   avatar:any;
   cantNotifications:number = 0;
-  estilo = 'left: -380px;';
+  estilo = 'left: -550px;';
   seeit:boolean = false;
   constructor() { }
 
@@ -22,7 +22,7 @@ export class SessionNavbarComponent implements OnInit {
     this.estilo = "left: 0px;";
     this.seeit = true;
   }else{
-    this.estilo = "left: -380px;";
+    this.estilo = "left: -550px;";
     this.seeit = false;
   }
     
